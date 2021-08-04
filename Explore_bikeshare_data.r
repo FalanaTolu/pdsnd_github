@@ -100,8 +100,8 @@ table(ny_chi$Age.Group)
 # First, we create a boxplot comparing the birth years of bikers in Chicago according to their genders.
 
 ggplot(aes(x = Gender, y = Birth.Year), data = chic) + geom_boxplot() + 
- ggtitle('Boxplot of Birth Year vs Gender of Users in Chicago') +
-       xlab('Gender of Users') + ylab('Birth Year of Users') + 
+ ggtitle('Boxplot of Birth Year vs Gender of Bikers in Chicago') +
+       xlab('Gender of Bikers') + ylab('Birth Year of Bikers') + 
 scale_y_continuous(breaks = pretty(c(1935,2001), n = 10), limits = c(1935,2001))
 
 # From the boxplot, it seems that although there are more male bikeshare users than females, there are proportionately
@@ -112,7 +112,7 @@ scale_y_continuous(breaks = pretty(c(1935,2001), n = 10), limits = c(1935,2001))
 # We also create a boxplot of bikers in New York comparing their birth using their genders.
 
 qplot(x = Gender, y = Birth.Year, data = subset(ny, !is.na(Gender)), geom = 'boxplot', 
-      main='Boxplot of Birth Year vs Gender of Users in New York', ylab='Birth Year of Users', xlab='Gender of Users') +
+      main='Boxplot of Birth Year vs Gender of Bikers in New York', ylab='Birth Year of Bikers', xlab='Gender of Bikers') +
         coord_cartesian(ylim = c(1935,2001)) + scale_y_continuous(breaks = pretty(c(1935,2001), n = 10))
 
 # It seems that the trend also holds in New York, there are more male bikeshare users than females but proportionately
@@ -123,8 +123,8 @@ qplot(x = Gender, y = Birth.Year, data = subset(ny, !is.na(Gender)), geom = 'box
 # Since the trend is the same we can use the combined data frame ny_chi to see it more clearly
 
 qplot(x = Gender, y = Birth.Year, data = subset(ny_chi, !is.na(Gender)), geom = 'boxplot', 
-      main='Boxplot of Birth Year vs Gender of Users in Chicago and New York', ylab='Birth Year of Users', 
-      xlab='Gender of Users') + facet_wrap(~city) +
+      main='Boxplot of Birth Year vs Gender of Bikers in Chicago and New York', ylab='Birth Year of Bikers', 
+      xlab='Gender of Bikers') + facet_wrap(~city) +
         coord_cartesian(ylim = c(1960,2001)) + scale_y_continuous(breaks = pretty(c(1935,2001), n = 10))
 
 # Females in both cities are slightly younger than males overall
