@@ -1,5 +1,3 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created: 04/08/2021
 
 ## Explore Bikeshare Data with R
@@ -21,5 +19,8 @@ The files used for this project include:
 2. Explore_bikeshare_data.r - the main file to run the project
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+For this project, I'll like to acknowledge the help of the following:
+*The Peer Chat section of the Udacity website. [Peer Chat](https://hub.udacity.com/)
+*[Stackoverflow](https://stackoverflow.com)
+*R Documentation
+*https://www.geeksforgeeks.org
