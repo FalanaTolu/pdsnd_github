@@ -188,4 +188,3 @@ by(ny$Trip.Duration, ny$Gender,summary)
 by(ny_chi$Trip.Duration, ny_chi$Age.Group, summary)
 # Using the median (and ignoring the NAs), it confirms the even distribution of trip duration across ages
 
-system('python -m nbconvert Explore_bikeshare_data.ipynb')
